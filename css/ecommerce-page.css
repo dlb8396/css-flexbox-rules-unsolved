@@ -37,9 +37,14 @@ section {
 }
 
 .header-content {
+  flex-direction: row;
 }
 
 .logo-search {
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .logo {
@@ -54,6 +59,8 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  border: 1px solid #8d8ba5;
+  box-shadow: 0 2px 8px rgba(141, 139, 165, 0.15);
 }
 
 .search-bar input {
@@ -68,9 +75,15 @@ section {
 
 .search-bar i {
   color: #8d8ba5;
+  align-content: center;
 }
 
 .options {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  gap: 40px;
 }
 
 .option {
@@ -87,6 +100,10 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
 }
 
 .category {
@@ -111,6 +128,10 @@ section {
 }
 
 .view-options {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 i.fa-th-list {
@@ -182,11 +203,18 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-content: flex-start;
 }
 
 .grid .product {
   width: 300px;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid .product-image-wrapper {
@@ -203,6 +231,9 @@ i.fa-th-list {
 }
 
 .grid .product-action {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
 }
@@ -210,10 +241,16 @@ i.fa-th-list {
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines .product {
   padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .lines .product-image-wrapper {
@@ -222,20 +259,31 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  display: flex;
 }
 
 .lines .product-info {
+  flex: 1;
 }
 
 .lines .product-action {
+  border-left: 1px solid #8d8ba5;
+  padding-left: 30px;
+  min-width: 200px;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines-action .product {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .lines-action .product-image-wrapper {
@@ -244,13 +292,21 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: space-around;
 }
 
 .lines-action .product-action {
-  border-left: 1px solid #8d8ba5;
-  padding-left: 30px;
-  min-width: 200px;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: flex-end;
+  align-self: flex-end;
+  gap: 20px;
+  padding-top: 30px;
 }
